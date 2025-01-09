@@ -10,4 +10,5 @@ class Routes {
   static const String orderProcess = '/orderProcess';
   static const String orderTrack = '/orderTrack';
   static const String rating = '/rating';
+  static const String checkout = '/checkout';
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:grocery_app/core/theme/color_manager.dart';
 
 class CustomDropDownFormField extends StatelessWidget {
   const CustomDropDownFormField(
@@ -29,6 +30,7 @@ class CustomDropDownFormField extends StatelessWidget {
       onChanged: onChanged,
       value: value,
       icon: icon,
+      iconEnabledColor: ColorManager.mainColor,
       decoration: InputDecoration(
         hintText: hintText,
         filled: true,
@@ -45,34 +47,34 @@ class CustomDropDownFormField extends StatelessWidget {
         ),
         disabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.grey,
+            color: ColorManager.mainColor,
           ),
           borderRadius: BorderRadius.all(
-            Radius.circular(8.0),
+            Radius.circular(32.0),
           ),
         ),
         enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.grey,
+            color: ColorManager.mainColor,
           ),
           borderRadius: BorderRadius.all(
-            Radius.circular(8.0),
+            Radius.circular(32.0),
           ),
         ),
         focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.grey,
+            color: ColorManager.mainColor,
           ),
           borderRadius: BorderRadius.all(
-            Radius.circular(8.0),
+            Radius.circular(32.0),
           ),
         ),
         border: const OutlineInputBorder(
           borderSide: BorderSide(
-            color: Colors.grey,
+            color: ColorManager.mainColor,
           ),
           borderRadius: BorderRadius.all(
-            Radius.circular(8.0),
+            Radius.circular(32.0),
           ),
         ),
       ),

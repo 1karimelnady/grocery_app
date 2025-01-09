@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             title: 'Grocery',
             theme: applicationTheme,
             getPages: AppPages().appPages(),
-            initialRoute: Routes.rating,
+            initialRoute: Routes.checkout,
           );
         });
   }

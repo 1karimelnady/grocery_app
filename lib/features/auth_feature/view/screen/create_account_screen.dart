@@ -63,10 +63,11 @@ class CreateAccountScreen extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                            child: TextFieldComponent(
-                          hint: 'First Name',
-                          borderColor: ColorManager.mainColor,
-                        )),
+                          child: TextFieldComponent(
+                            hint: 'First Name',
+                            borderColor: ColorManager.mainColor,
+                          ),
+                        ),
                         19.horizontalSpace,
                         Expanded(
                             child: TextFieldComponent(

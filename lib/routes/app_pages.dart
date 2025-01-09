@@ -4,6 +4,7 @@ import 'package:grocery_app/features/auth_feature/view/screen/sign_in_screen.dar
 import 'package:grocery_app/features/cart_feature/view/screen/cart_screen.dart';
 import 'package:grocery_app/features/categories_features/logic/categories_binding.dart';
 import 'package:grocery_app/features/categories_features/view/screen/categories_screen.dart';
+import 'package:grocery_app/features/checkout_feature/view/screen/checkout_screen.dart';
 import 'package:grocery_app/features/favourite_feature/view/screen/favourite_screen.dart';
 import 'package:grocery_app/features/home_feature/logic/binding/home_binding.dart';
 import 'package:grocery_app/features/home_feature/view/screen/home_screen.dart';
@@ -65,6 +66,10 @@ class AppPages {
         GetPage(
           name: Routes.rating,
           page: () => Review(),
+        ),
+        GetPage(
+          name: Routes.checkout,
+          page: () => Checkout(),
         ),
       ];
 }
