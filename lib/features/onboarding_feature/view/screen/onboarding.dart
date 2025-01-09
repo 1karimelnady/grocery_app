@@ -26,7 +26,7 @@ class Onboarding extends GetView<OnboardingController> {
                   onPressed: () {
                     controller.currentIndex.value--;
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.arrow_back,
                     color: ColorManager.mainColor,
                     size: 30,

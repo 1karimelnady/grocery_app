@@ -22,7 +22,7 @@ class SignInScreen extends StatelessWidget {
               Container(
                 width: 1.sw,
                 height: 400.h,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage(AppImages.signIn),
                         fit: BoxFit.cover)),
@@ -47,7 +47,7 @@ class SignInScreen extends StatelessWidget {
                         ),
                         const Spacer(),
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: ColorManager.blackColor,
                           ),
@@ -73,7 +73,7 @@ class SignInScreen extends StatelessWidget {
                       hasShowPasswordIcon: true,
                       suffixIcon: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.visibility_off_outlined,
+                          icon: const Icon(Icons.visibility_off_outlined,
                               color: ColorManager.hintColor)),
                     ),
                     10.verticalSpace,

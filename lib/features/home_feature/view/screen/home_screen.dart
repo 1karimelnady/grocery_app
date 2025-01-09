@@ -3,6 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:grocery_app/component/bottom_nav_bar_widget.dart';
 import 'package:grocery_app/component/custom_button.dart';
 import 'package:grocery_app/component/custom_image_handler.dart';
 import 'package:grocery_app/core/constants/app_images_path.dart';
@@ -27,7 +28,7 @@ class HomeScreen extends GetView<HomeController> {
               40.verticalSpace,
               Text("Good Morning",
                   style: TextManager.font14HintMedium
-                      .copyWith(color: Color(0xff5F5F5F))),
+                      .copyWith(color: const Color(0xff5F5F5F))),
               4.verticalSpace,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,8 +51,8 @@ class HomeScreen extends GetView<HomeController> {
                   enableInfiniteScroll: true,
                   reverse: false,
                   autoPlay: true,
-                  autoPlayInterval: Duration(seconds: 3),
-                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  autoPlayInterval: const Duration(seconds: 3),
+                  autoPlayAnimationDuration: const Duration(milliseconds: 800),
                   autoPlayCurve: Curves.fastOutSlowIn,
                   enlargeCenterPage: true,
                   enlargeFactor: 0.3,
@@ -69,14 +70,14 @@ class HomeScreen extends GetView<HomeController> {
                       )),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_forward,
                         size: 30,
                       ))
                 ],
               ),
               13.verticalSpace,
-              Container(
+              SizedBox(
                   height: 100.h,
                   child: ListView.separated(
                       shrinkWrap: true,
@@ -104,7 +105,7 @@ class HomeScreen extends GetView<HomeController> {
                       )),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_forward,
                         size: 30,
                       ))
@@ -121,11 +122,11 @@ class HomeScreen extends GetView<HomeController> {
                   ),
                   shrinkWrap: true,
                   itemCount: 4,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => Stack(
                     children: [
-                      Image(image: AssetImage(AppImages.trending)),
-                      Positioned(
+                      const Image(image: AssetImage(AppImages.trending)),
+                      const Positioned(
                           top: 15,
                           left: 15,
                           child: Icon(
@@ -165,6 +166,7 @@ class HomeScreen extends GetView<HomeController> {
           ),
         ),
       ),
+      bottomNavigationBar: buildBottomNavBarWidget(0),
     );
   }
 }

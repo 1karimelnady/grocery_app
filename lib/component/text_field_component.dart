@@ -98,7 +98,7 @@ class _TextFieldComponentState extends State<TextFieldComponent> {
             : (context, {currentLength = 1, maxLength, isFocused = false}) {
                 return Text(
                   '$currentLength/$maxLength',
-                  style: TextStyle(color: ColorManager.mainColor),
+                  style: const TextStyle(color: ColorManager.mainColor),
                 );
               },
         autovalidateMode: AutovalidateMode.onUserInteraction,

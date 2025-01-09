@@ -20,7 +20,7 @@ class CreateAccountScreen extends StatelessWidget {
               Container(
                 width: 1.sw,
                 height: 290.h,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage(AppImages.createAccount),
                         fit: BoxFit.cover)),
@@ -45,7 +45,7 @@ class CreateAccountScreen extends StatelessWidget {
                         ),
                         const Spacer(),
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: ColorManager.blackColor,
                           ),
@@ -86,7 +86,7 @@ class CreateAccountScreen extends StatelessWidget {
                       hasShowPasswordIcon: true,
                       suffixIcon: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.visibility_off_outlined,
+                          icon: const Icon(Icons.visibility_off_outlined,
                               color: ColorManager.hintColor)),
                     ),
                     10.verticalSpace,
@@ -96,7 +96,7 @@ class CreateAccountScreen extends StatelessWidget {
                           TextSpan(
                               text: 'By tapping Sign up you accept all  ',
                               style: TextManager.font14HintMedium.copyWith(
-                                color: Color(0xff303030),
+                                color: const Color(0xff303030),
                                 fontFamily: 'Poppins',
                               )),
                           TextSpan(
@@ -107,7 +107,7 @@ class CreateAccountScreen extends StatelessWidget {
                           TextSpan(
                               text: 'and ',
                               style: TextManager.font16BlackRegular.copyWith(
-                                color: Color(0xff303030),
+                                color: const Color(0xff303030),
                               )),
                           TextSpan(
                               text: 'condition',

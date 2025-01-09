@@ -15,4 +15,9 @@ class AppImages {
   static const String slider2 = 'assets/images/slider2.png';
   static const String profile = 'assets/images/profilePicture.png';
   static const String trending = 'assets/images/trending.png';
+  static const String categoriesNav = 'assets/images/ctegories_nav.png';
+  static const String home = 'assets/images/home.png';
+  static const String cartNav = 'assets/images/cart_nav.png';
+  static const String fav = 'assets/images/fav.png';
+  static const String ordertrack = 'assets/images/order_tracking.png';
 }
