@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class CustomLoader extends StatelessWidget {
+  const CustomLoader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      child: const CircularProgressIndicator(),
+    );
+  }
+}
+
+startLoading() {
+  showDialog(
+    context: Get.context!,
+    barrierDismissible: false,
+    useSafeArea: true,
+    builder: (context) => const CustomLoader(),
+  );
+}
+
+stopLoading() {
+  Get.back();
+}
